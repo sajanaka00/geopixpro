@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GeoPixPro</title>
+        <link rel="stylesheet" href="ContactUs.css">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet" />
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
+        rel="stylesheet" />
+        <link rel="icon" href="Image/tablogo.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <a href="index.html#">
+                    <img src="Image/logo3.png" alt="GeoPixPro Logo" id="nav-logo">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#" >Home</a>
+                    <a href="ServicesPage.html">Services</a>
+                    <a href="AboutUS.html">About Us</a>
+                    <a href="Team.html">Team</a>
+                    <a href="Careers.html">Careers</a>
+                    <a href="ContactUs.html"class="active">Contact Us</a>
+        
+                </div>
+                <div id="hamburger"  class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i> 
+                </div>
+            </nav>
+
+
+            <div class="header-text">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></h2>
+                <h1><span class="text-blue">Contact</span></h1>
+                <p>Thank you for your interest in our solutions.<br>We value your feedback and are here to assist you with any questions or concerns, please submit your information and we will promptly take care of your request.  </p>
+            </div>
+            <div class="header-text1">
+                <h2>Contact Us</h2>
+            </div>
+
+        </header>
+
+        <div class="background-img">
+            <img src="Image/ServicesPage-1.png" id="homepage-image">
+        </div> 
+
+
+        <div class="contact-grid">
+            <div class="contact-form">
+                <div class="topic">
+                    <h2><span class="text-B">Tell Us About</span> <span class="text-O">Yourself</span></h2>
+                </div>
+                <form action="https://formspree.io/f/mdkokljb" method="POST">
+
+                    <div class="from-container">
+                    
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name">
+                        
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name">
+                        
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="name@gmail.com">
+                        
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your Phone number">
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                        
+                        <label class="checkbox-container">
+                            I have read and approved the conditions
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d392.98599134370966!2d79.85864503684583!3d6.884492374247007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTMnMDQuNyJOIDc5wrA1MSczMS4wIkU!5e0!3m2!1sen!2slk!4v1719228965141!5m2!1sen!2slk" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="contact">
+                    <p><a href="tel:+94112559962" style="font-family: Arial, sans-serif; text-decoration: none; color: inherit;">
+                        <i class="fas fa-phone-alt"></i> +94 (11) 2559962
+                    </a></p>
+                    <p><a href="mailto:info@geopixpro.com" style="text-decoration: none; color: inherit;"><i class="fas fa-envelope"></i> info@geopixpro.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> No-02, Nandana Gardens, Colombo-04, Sri Lanka.</p>
+                </div>
+            </div>
+
+
+
+            
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer-container">
+            <img src="Image/footer-background.png" alt="Footer Background" class="footer-background">
+            <img src="Image/logo3.png" alt="Logo" class="footer-logo">
+
+            <div class="content-section">
+                <p>GeoPixPro is a leading technology company delivering innovative solutions and quality services tailored to meet your business needs.</p>
+                <hr> 
+                <div class="contact-info">
+                    <p style="font-family: Arial, sans-serif;"><i class="fas fa-phone-alt"></i> +94 (11) 2559962</p>
+                    <p><i class="fas fa-envelope"></i> info@geopixpro.lk</p>
+                    <p><i class="fas fa-map-marker-alt"></i> No-02, Nandana Gardens, Colombo-04 , Sri Lanka.</p>
+                </div>
+
+                <div class="quick-link">
+                    <ul>
+                        <li>
+                            <a href="index.html" style="text-decoration: none; color: inherit;" 
+                               onmouseover="this.style.color='orange'" 
+                               onmouseout="this.style.color='inherit'">Home</a>
+                        </li>
+                        <li>
+                            <a href="ServicesPage.html" style="text-decoration: none; color: inherit;" 
+                               onmouseover="this.style.color='orange'" 
+                               onmouseout="this.style.color='inherit'">Services</a>
+                        </li>
+                        <li>
+                            <a href="AboutUS.html" style="text-decoration: none; color: inherit;" 
+                               onmouseover="this.style.color='orange'" 
+                               onmouseout="this.style.color='inherit'">About Us</a>
+                        </li>
+                        <li>
+                            <a href="Careers.html" style="text-decoration: none; color: inherit;" 
+                               onmouseover="this.style.color='orange'" 
+                               onmouseout="this.style.color='inherit'">Careers</a>
+                        </li>
+                        <li>
+                            <a href="ContactUs.html" style="text-decoration: none; color: inherit;" 
+                               onmouseover="this.style.color='orange'" 
+                               onmouseout="this.style.color='inherit'">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                   
+    
+                <div class="our-services">
+                    <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Web Development</a></li>
+                    <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Mobile Development</a></li>
+                    <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Geo Specialist</a></li>
+                    <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">UI/UX Design</a></li>
+                    <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Quality Assurance</a></li>
+                    
+                </div>
+
+                <div class="link-hedding">
+                    <h2>Quick Link</h2>
+                </div>
+                <div class="services-hedding">
+                    <h2>Our Services</h2>
+                </div>
+
+
+                <div class="email-subscription">
+                    <h2>Join The GeoPixPro Family</h2>
+                    <form action="https://formspree.io/f/mdkokljb" method="POST">
+                        <input type="email" name="email" placeholder="Enter Email Address" required>
+                        <button type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="copyright">
+                    <p>© 2024 Copyright by GeoPixPro Technologies. All rights reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        // Scroll menubar card
+    document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const frontPage = '/index.html';
+
+            function handleScroll() {
+                if (window.location.pathname === frontPage) {
+                    nav.classList.remove('scrolled');
+                } else {
+                    if (window.scrollY > 0) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
+                }
+            }
+            handleScroll();
+            window.addEventListener('scroll', handleScroll);
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Combine all elements to be observed
+        const elementsToAnimate = document.querySelectorAll('.contact-form, .map');
+
+        const observerOptions = {
+            root: null,
+            threshold: 0.05 // Use 5% threshold to trigger animations
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target); // Stop observing once the animation is triggered
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements
+        elementsToAnimate.forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+    document.getElementById('hamburger').addEventListener('click', function () {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active'); // Toggle the active class
+    });
+
+
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+    }
+
+    // const toggleButton = document.querySelector('.toggle-button');
+    // const navLinks = document.querySelector('.nav-links');
+
+    // toggleButton.addEventListener('click', () => {
+    //     navLinks.classList.toggle('active');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    </script>
+</html>
+
+
+
+
+
+   
+    
+

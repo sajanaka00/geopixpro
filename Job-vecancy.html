@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+    <link rel="stylesheet" href="job-vecancy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Image/tablogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <nav>
+        <a href="index.html#">
+            <img src="Image/logo3.png" alt="GeoPixPro Logo" id="nav-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html#" >Home</a>
+            <a href="ServicesPage.html">Services</a>
+            <a href="AboutUS.html">About Us</a>
+            <a href="Team.html">Team</a>
+            <a href="Careers.html"class="active">Careers</a>
+            <a href="ContactUs.html">Contact Us</a>
+
+        </div>
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</head>
+<body>
+    
+    <main class="job-page-layout">
+        
+        <section class="job-info">
+            <h1 id="job-title">Job Title</h1>
+            <section class="job-details" id="job-details">
+                
+            </section>
+            <a href="Careers.html" class="back-button">← Back to Careers</a>
+        </section>
+
+        <section class="apply-form">
+            <h2>Apply Now</h2>
+            <!-- <form action="https://formspree.io/f/mdkokljb" method="POST">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="coverLetter" placeholder="Cover Letter" rows="4"></textarea>
+                <div class="resume">
+                    <label for="resumeLink" style="font-size: 14px; color: #4d4d4d;">Paste your Resume link (Google Drive/Dropbox)</label>
+                    <input type="url" name="resumeLink" id="resumeLink" placeholder="https://drive.google.com/..." required>
+                
+                <input type="submit" value="Submit Application">
+                </div>   
+            </form> -->
+
+            <form action="https://formspree.io/f/mdkokljb" method="POST" enctype="multipart/form-data">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="coverLetter" placeholder="Cover Letter" rows="4"></textarea>
+                <div class="resume">
+                    <label for="resumeUpload" style="font-size: 14px; color: #4d4d4d;">Upload your Resume (PDF)</label>
+                    <input type="file" name="resume" id="resumeUpload" accept=".pdf" required>
+                </div>   
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 GeoPixPro. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const jobType = urlParams.get('job');
+                console.log('1',jobType)
+            const jobTitleElement = document.getElementById('job-title');
+            const jobDetailsElement = document.getElementById('job-details');
+
+            const jobDetails = {
+                // Frontend developer
+                'frontend-developer': {
+                    title: 'Frontend Developer',
+                    description: 'As a leader in the global mining industry, GeoPixPro offers an opportunity for passionate and dedicated individuals to make a significant impact. By joining our team, you contribute to pioneering advancements in mining technology and sustainability through cutting-edge frontend development.',
+                    responsibilities: [
+                        'Develop intuitive and user-friendly interfaces',
+                        'Collaborate with designers and back-end developers to implement design mockups',
+                        'Ensure responsiveness and cross-platform optimization of web applications',
+                        'Optimize applications for maximum speed and scalability',
+                        'Maintain high standards of web performance, UI consistency, and accessibility'
+                    ],
+                    requirements: [
+                        'Strong proficiency in HTML, CSS, and JavaScript',
+                        'Experience with frontend frameworks such as React, Angular, or Vue.js',
+                        'Familiarity with version control systems like Git',
+                        'Understanding of responsive design principles and cross-browser compatibility',
+                        'Ability to collaborate in a team and adapt to new technologies'
+                    ]
+                },
+
+                // Backend developer
+                'backend-developer': {
+                    title: 'Backend Developer',
+                    description: 'GeoPixPro offers an exciting opportunity for backend developers to make an impact on the global mining industry. Be part of a team that creates scalable, robust systems to support innovation in mining technology.',
+                    responsibilities: [
+                        'Develop and maintain server-side logic and databases',
+                        'Design and implement scalable and secure APIs',
+                        'Collaborate with frontend developers to integrate user-facing elements',
+                        'Optimize applications for speed and efficiency',
+                        'Maintain high security standards and data integrity'
+                    ],
+                    requirements: [
+                        'Proficiency in backend programming languages such as Python, Java, or Node.js',
+                        'Strong understanding of databases like MySQL, PostgreSQL, or MongoDB',
+                        'Experience with RESTful APIs and web services',
+                        'Familiarity with server management and deployment practices',
+                        'Ability to write clean, scalable code and maintain documentation'
+                    ]
+                },
+
+                // Fullstack developer
+                'fullstack-developer': {
+                    title: 'Fullstack Developer',
+                    description: 'GeoPixPro offers a unique opportunity for individuals passionate about full-stack development. You will contribute to the creation of software that advances mining technology and sustainability by handling both frontend and backend tasks.',
+                    responsibilities: [
+                        'Develop and maintain both front-end and back-end applications',
+                        'Collaborate with designers and other developers to deliver end-to-end solutions',
+                        'Optimize applications for performance and scalability',
+                        'Ensure high-quality code and adherence to best practices'
+                    ],
+                    requirements: [
+                        'Experience with both front-end (HTML, CSS, JavaScript) and back-end technologies (Node.js, Python, Java',
+                        'Familiarity with frontend frameworks (React, Angular) and backend frameworks (Express, Django)',
+                        'Strong understanding of databases (SQL, NoSQL)',
+                        'Ability to manage the entire software development lifecycle',
+                        'Ability to work in a fast-paced environment and handle multiple tasks'
+                    ]
+                },
+
+                // Business Analysts
+                'business-analysts': {
+                    title: 'Business Analysts',
+                    description: 'Join GeoPixPro as a Business Analyst and contribute to innovative advancements in mining technology by analyzing and optimizing business processes. Help us bridge the gap between business needs and technical solutions.',
+                    responsibilities: [
+                        'Analyze and document business processes, requirements, and objectives',
+                        'Collaborate with stakeholders to identify areas for improvement',
+                        'Define project scope and work with development teams to implement solutions',
+                        'Ensure that project deliverables meet business expectations',
+                        'Facilitate communication between technical teams and business stakeholders'
+                    ],
+                    requirements: [
+                        'Strong analytical skills and attention to detail',
+                        'Ability to gather and document requirements and translate them into technical solutions',
+                        'Experience with project management methodologies (Agile, Waterfall)',
+                        'Excellent communication and presentation skills',
+                        'Familiarity with business process modeling tools and techniques'
+                    ]
+                }
+            };
+
+            
+                jobTitleElement.textContent = jobDetails[jobType].title;
+                jobDetailsElement.innerHTML = `
+                    <h2>Job Description</h2>
+                    <p class="job-description">${jobDetails[jobType].description}</p>
+                    <h2>Responsibilities</h2>
+                    <ul>${jobDetails[jobType].responsibilities.map(item => `<li>${item}</li>`).join('')}</ul>
+                    <h2>Requirements</h2>
+                    <ul>${jobDetails[jobType].requirements.map(item => `<li>${item}</li>`).join('')}</ul>
+                `;
+            
+
+        });
+        // Application
+        document.getElementById('applicationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            document.getElementById('formOverlay').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            setTimeout(() => {
+                this.reset();
+                
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                    document.getElementById('formOverlay').style.display = 'none';
+                }, 1000); 
+            }, 2000); 
+        });
+        window.addEventListener('DOMContentLoaded', function() {
+            // Select the list containing responsibilities
+            const responsibilitiesList = document.querySelectorAll('.responsibilities li');
+            
+            responsibilitiesList.forEach(function(listItem) {
+                listItem.classList.add('custom-bullet'); // Add a class to each list item for styling
+            });
+        });
+// Scroll menubar card
+        document.addEventListener('DOMContentLoaded', function() {
+                const nav = document.querySelector('nav');
+                const frontPage = '/path/to/index.html';
+
+                function handleScroll() {
+                    if (window.location.pathname === frontPage) {
+                        nav.classList.remove('scrolled');
+                    } else {
+                        if (window.scrollY > 0) {
+                            nav.classList.add('scrolled');
+                        } else {
+                            nav.classList.remove('scrolled');
+                        }
+                    }
+                }
+                handleScroll();
+                window.addEventListener('scroll', handleScroll);
+        });
+        
+        // ============ Mobile responsive design menu ================
+        document.getElementById('hamburger').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active'); // 
+            });
+
+            function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    //! =============================================================
+
+    </script>
+</body>
+</html>

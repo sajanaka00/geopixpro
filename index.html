@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPixPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-background">
+        <video class="slides" autoplay muted loop>
+            <source src="Image/Intro-video.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Video Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" style="background: rgba(20, 25, 45, 1.0); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 1rem 0; z-index: 1000;">
+        <div class="container">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border: none;">
+                <span class="navbar-toggler-icon-custom" style="color: white;"><i class="fas fa-bars"></i></span>
+            </button>
+                         
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" href="#" style="color: #ff7730 !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" style="color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" style="color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" style="color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" style="color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" style="color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; margin: 0 1rem; transition: all 0.3s ease;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">        
+        <div class="container position-relative content-layer">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text-white">
+                        <!-- Tagline -->
+                        <div class="tagline mb-4">
+                            WE PROVIDE OUTSOURCES
+                        </div>
+                        
+                        <!-- Main Heading -->
+                        <h1 class="main-heading mb-4">
+                            Best IT <span class="highlight">Solution</span><br>
+                            For Your Business
+                        </h1>
+                        
+                        <!-- Description -->
+                        <p class="description mb-5">
+                            We offer a comprehensive range of IT services designed to meet your organization's unique needs. Our solutions enhance productivity, ensure data security, and streamline operations so that you can focus on what you do best.
+                        </p>
+                        
+                        <!-- CTA Button -->
+                        <a href="#" class="cta-button btn text-white fw-bold">
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links - Desktop -->
+    <!-- <div class="social-links desktop-social d-none d-md-block">
+        <a href="#" class="social-link d-block text-decoration-none mb-3">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-link d-block text-decoration-none mb-3">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link d-block text-decoration-none mb-3">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-link d-block text-decoration-none mb-3">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div> -->
+
+    <!-- Social Links - Mobile -->
+    <!-- <div class="container d-md-none">
+        <div class="mobile-social d-flex justify-content-center mt-4">
+            <a href="#" class="social-link text-decoration-none mx-3">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link text-decoration-none mx-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link text-decoration-none mx-3">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link text-decoration-none mx-3">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div> -->
+
+    <section class="services-section">
+        <div class="container section-container">
+            <div class="dot-img2">
+                    <img src="Image/dot-img2.png" >
+                </div>
+
+                <div class="vec-2">
+                    <img src="Image/vec-2.png" >
+                </div>
+                <div class="vec-3">
+                    <img src="Image/vec-3.png" >
+                </div>
+            <div class="row">
+                <!-- Left Column - Services -->
+                <div class="col-lg-8">
+                <div class="row">
+                    <!-- Mobile Development -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="service-title">Mobile Development</h3>
+                            <p class="service-description">
+                                Expertise across multiple platforms and technologies, including Cross-Platform, Hybrid,
+                            </p>
+                            <button class="arrow-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3 class="service-title">Web Development</h3>
+                            <p class="service-description">
+                                Client-dedicated software engineering teams to design and develop enterprise applications, platform and services on all major tech.
+                            </p>
+                            <button class="arrow-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- UI/UX Design -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card position-relative">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-description">
+                                Automate and track emails to individuals or groups. Skillme's built-in system helps organize your organization.
+                            </p>
+                            <button class="arrow-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Geo Specialist -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="service-title">Geo Specialist</h3>
+                            <p class="service-description">
+                                Expertise across multiple platforms and technologies, including Cross-Platform, Hybrid, Native and Progressive Web Apps (PWA).
+                            </p>
+                            <button class="arrow-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Services Info -->
+            <div class="col-lg-4">
+                <div class="services-header text-start">
+                    <div class="services-subtitle">OUR SERVICES</div>
+                    <h2 class="services-title">BEST IT SOLUTION FOR YOUR BUSINESS</h2>
+                    <p class="services-description">
+                        As part of our comprehensive IT services, we offer custom software development tailored to your mining operations and advanced data management and analytics. Our IT consulting and integration services ensure seamless alignment with your business goals, while ongoing support and maintenance ensure optimal performance.
+                    </p>
+                    
+                    <ul class="service-list">
+                        <li>Full Stack Development</li>
+                        <li>Data Management</li>
+                        <li>Quality Assurance</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                    
+                    <a href="#" class="get-started-btn">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="geopixpro-section">
+        <!-- Dot Pattern Background -->
+        <div class="dot-pattern"></div>
+        <div class="dot-pattern2"></div>
+        
+        <div class="container content-wrapper">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="text-content">
+                        <h2 class="section-title">
+                            WHAT IS <span class="highlight">GEOPIXPRO</span>
+                        </h2>
+                        
+                        <p class="section-description">
+                            GeoPixPro is a software development company based in Sri Lanka, specializing in creating custom software solutions and product services for clients globally. Known for its innovative approach, GeoPixPro collaborates with mining investment and technology companies to develop effective software products that bring about substantial improvements in their organizations.
+                        </p>
+                        
+                        <p class="section-description">
+                            GeoPixPro's dedicated team of experienced developers and designers is committed to delivering high-quality, tailored software. Their emphasis on collaboration and customer satisfaction ensures the precise execution of every project.
+                        </p>
+                        
+                        <a href="#" class="get-started-btn">
+                            Get Started
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Image Content -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="image-content">
+                        <img src="Image/image-2.jpg" alt="GeoPixPro Team" class="circular-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Homepage 2nd background -->
+        <div class="background-3 d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-4 col-12">
+                        <div class="images-container position-relative">
+                            <div class="three-image position-relative">
+                                <div class="square-3" style="width: 450px; height: 281px; border-radius: 10px; background: url('Image/clients.jpg') center/cover; right: 100px; top :20px;"></div>
+                                <div class="square-image-2 position-absolute" style="width: 301px; height: 277px; border-radius: 120px 0px 120px 120px; background: url('Image/team-2.jpg') center/cover; left: -127px; top: 178px;"></div>
+                                <!-- <div class="Blank-square bg-light border" style="width: 80px; height: 80px; border-radius: 8px;"></div> -->
+                            </div>
+                            
+                            <!-- <div class="yellow-vector position-absolute" style="top: 50%; left: 0;">
+                                <img src="Image/yellow-vector.png" class="img-fluid">
+                            </div>
+                            
+                            <div class="blue-vector position-absolute" style="top: 30%; right: 0;">
+                                <img src="Image/blue-vector.png" class="img-fluid">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div class="description-4 text-start">
+                            <div class="part-4 mb-4">
+                                <h2 class="display-4 fw-bold lh-base">
+                                    <span class="text-white">Leading companies</span> 
+                                    <span class="text-orange">trust us</span> 
+                                    <span class="text-white">to<br>develop software</span>
+                                </h2>
+                            </div>
+                            
+                            <div class="part-4-2">
+                                <p class="lead fs-6 lh-lg text-white mb-0">
+                                    Geopixpro has successfully launched a data product platform that provides mining investment companies and investors with accurate, actionable data. We are proud to have released both Version one and Version two of our product, which have significantly enhanced data accessibility and decision-making for our clients.
+                                    <br><br>
+                                    This platform has empowered clients to make more informed decisions, improving operational efficiency and driving better outcomes in their investments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- *Our achievements* -->
+
+    <section class="bg-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <!-- Content Section - Left Side -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="pe-lg-4">
+                        <h2 class="display-5 fw-bold text-uppercase mb-3">
+                            <span class="text-orange">OUR</span> 
+                            <span class="text-blue">ACHIEVEMENTS</span>
+                        </h2>
+                        <h3 class="h4 fw-semibold text-dark text-uppercase mb-4">
+                            SOME NUMBER OF OUR ACHIEVEMENTS
+                        </h3>
+                        <p class="fs-6 text-muted lh-lg">
+                            Geopixpro has successfully launched a data product platform that provides mining investment companies and investors with accurate, actionable data. We are proud to have released both Version one and Version two of our product, which have significantly enhanced data accessibility and decision-making for our clients.
+                        </p>
+                        <p class="fs-6 text-muted lh-lg">
+                            We are proud to have released both Version One and Version Two of our product, further improving data accessibility and usability for our clients. These enhancements have strengthened our client's ability to make strategic investment choices with greater confidence.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Images Section - Right Side -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative d-flex justify-content-center align-items-center" style="height: 400px;">
+                        
+                        <!-- First Achievement Card -->
+                        <div class="image" style="width: 280px; height: 200px; top: 50px; left: 0;">
+                            <img src="Image/computer-1.png" alt="computer" style="width: 200px; height: 100px;">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- *Our partners* -->
+
+    <div class="full-width-card-2" style="background-color: #f7f7f7; padding: 80px 0; overflow: hidden;">         
+    <!-- <div class="part-5dot-img-1">             
+        <img src="Image/Dot-img3.png" alt="Decorative dots" style="width: 100px;">         
+    </div>          -->
+    <!-- <div class="part-5dot-img-2">             
+        <img src="Image/Dot-img4.png" alt="Decorative dots">         
+    </div> -->
+    
+    <div class="container-fluid">             
+        <div class="partners-content" style="position: relative; z-index: 2; text-align: center;">                 
+            <h2><span class="text-orange">OUR</span> <span class="text-blue">PARTNERS</span></h2>                 
+            <p>Trusted by 3+ Companies Worldwide</p>                                  
+            
+            <!-- Changed the row structure for better centering -->
+            <div class="row justify-content-center g-4">                     
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center">                         
+                    <div class="partner-logo" style="background-color: #f7f7f7;">                             
+                        <img src="Image/digigeo-map.png" alt="DigiGeo MAPS" style="max-width:100%; height:60px;">                         
+                    </div>                     
+                </div>                     
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center">                         
+                    <div class="partner-logo">                             
+                        <img src="Image/digigeo_Atles.png" alt="DigiGeo Data" style="max-width: 100%; height: 60px;">                         
+                    </div>                     
+                </div>                     
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center">                         
+                    <div class="partner-logo">                             
+                        <img src="Image/digigeo-map.png" alt="DigiGeo MAPS" style="max-width: 100%; height: 60px;">                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div>
+<!-- *How development* -->
+        <div class="full-width-container" style=" width: 100%;max-width: 100%;background-color: white;
+            padding: 60px 0;">
+            <!-- Header Section -->
+            <div class="row">
+                <div class="col-12 text-center" style="margin: 0; padding: 0;">
+                    <h2 class="display-5 mb-4"><span class="text-orange">HOW</span> <span class="text-blue">DEVELOPMENT</span></h2>
+                    <p class="lead mb-5 mx-auto">Our development process is designed to ensure seamless collaboration, from assembling the right team to iterative delivery, keeping quality and efficiency at the forefront.</p>
+                </div>
+            </div>
+            
+            <!-- Agile Cards Container -->
+            <div class="agile-cards-container">
+                <!-- First Row: Cards 1, 2, 3 -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">1#</span> Assemble the right team</h3>
+                            <p class="mb-0">Gather a group of skilled professionals, including developers, designers, testers, and project managers, who will work together on the project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">2#</span> Sprint planning</h3>
+                            <p class="mb-0">Break the project into smaller, manageable tasks called sprints. Plan what needs to be done in each sprint, set goals, and assign tasks to team members.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">3#</span> Tech architecture</h3>
+                            <p class="mb-0">Design the technical structure of the software. This includes deciding on the technologies, frameworks, and tools that will be used to build the software.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Red Line Image Between Cards -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="redline my-4">
+                            <img src="Image/red-line.png" alt="Process Flow Line" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Row: Cards 4, 5, 6 -->
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">4#</span> Standups & weekly demos</h3>
+                            <p class="mb-0">Hold daily standups for team members to discuss progress and obstacles. In weekly demos, the team showcases completed work to stakeholders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">5#</span> Code reviews</h3>
+                            <p class="mb-0">Regularly review team members' code to ensure quality and adherence to best practices, helping catch errors early and improve overall software quality.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="agile-card p-4 h-100">
+                            <h3 class="h5 mb-3"><span class="text-orange">6#</span> Iterative delivery</h3>
+                            <p class="mb-0">Develop software in small increments, deliver after each sprint, gather feedback, and improve continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section position-relative overflow-hidden colour-white">
+        <img src="Image/footer-background.png" alt="Footer Background" class="footer-background" style="position: absolute; left: 0; width: 100%; height: 100%; bottom: 0;">
+        
+        <div class="container footer-content" style="position: relative; z-index: 2;">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-lg-4 col-md-6" style="margin: 30px 0 0 30px;">
+                    <img src="Image/logo3.png" alt="GeoPixPro Logo" class="footer-logo" style="max-width: 200px; height: auto; margin-bottom: 30px;">
+                    <p class="company-description" style="font-size: 16px; line-height: 1.6; margin-bottom: 30px; color: #e0e0e0;">
+                        GeoPixPro is a leading technology company delivering innovative solutions and quality services tailored to meet your business needs.
+                    </p>
+                    <div class="divider" style="height: 1px; background: rgba(255, 255, 255, 0.1); margin: 30px 0;"></div>
+                    <div class="contact-info" style="margin-bottom: 30px;">
+                        <p style="margin-bottom: 15px; font-size: 14px; display: flex; align-items: center; color: #e0e0e0;"><i class="fas fa-phone-alt" style="margin-right: 10px; width: 20px; color: #ff6b35;"></i> +94 (11) 2559962</p>
+                        <p style="margin-bottom: 15px; font-size: 14px; display: flex; align-items: center; color: #e0e0e0;"><i class="fas fa-envelope" style="margin-right: 10px; width: 20px; color: #ff6b35;"></i> info@geopixpro.lk</p>
+                        <p style="margin-bottom: 15px; font-size: 14px; display: flex; align-items: center; color: #e0e0e0;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; width: 20px; color: #ff6b35;"></i> No-02, Nandana Gardens, Colombo-04, Sri Lanka.</p>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="col-lg-3 col-md-6 " style="margin: 30px 0 0 50px;">
+                    <h3 class="section-title" style="font-size: 20px; font-weight: 600; margin-bottom: 25px; color: white; position: relative;">Quick Link</h3>
+                    <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 12px;"><a href="#" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Home</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Services</a></li>
+                        <li style="margin-bottom: 12px;"><a href="AboutUS.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">About Us</a></li>
+                        <li style="margin-bottom: 12px;"><a href="Careers.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Careers</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ContactUs.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Our Services Column -->
+                <div class="col-lg-4 col-md-6"  style="margin: 30px 0 0 10px;">
+                    <h3 class="section-title" style="font-size: 20px; font-weight: 600; margin-bottom: 25px; color: white; position: relative;">Our Services</h3>
+                    <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Web Development</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Mobile Development</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Geo Specialist</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">UI/UX Design</a></li>
+                        <li style="margin-bottom: 12px;"><a href="ServicesPage.html" style="color: #e0e0e0; text-decoration: none; font-size: 14px; transition: color 0.3s ease; display: flex; align-items: center; position: relative;">Quality Assurance</a></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            
+            <!-- Copyright Section -->
+            <div class="row">
+                <div class="col-12 text-white text-center">
+                    <div class="copyright">
+                        <hr class="line">
+                        <p>© 2024 Copyright by GeoPixPro Technologies. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

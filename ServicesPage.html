@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPixPro</title>
+    <link rel="stylesheet" href="ServiceStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
+      rel="stylesheet" />
+      <link rel="icon" href="Image/tablogo.png" type="image/png">
+      <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html#">
+                <img src="Image/logo3.png" alt="GeoPixPro Logo" id="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#" >Home</a>
+                <a href="ServicesPage.html"class="active">Services</a>
+                <a href="AboutUS.html">About Us</a>
+                <a href="Team.html">Team</a>
+                <a href="Careers.html">Careers</a>
+                <a href="ContactUs.html">Contact Us</a>
+    
+            </div>
+            <div id="hamburger"  class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> 
+            </div>
+        </nav>
+        
+        <div class="header-text">
+            <h2><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></h2>
+            <h1><span class="text-orange">Our</span> <span class="text-blue">Services</span></h1>
+            <p>We empower our partners to grow their business value within their industries and organizations by addressing their needs, promoting innovation, and aligning with their mission and values. Through our product and software services, we help them unlock new opportunities and maximize their potential. </p>
+        </div>
+        <div class="header-text1">
+            <h2>Services</h2>
+        </div>
+        
+    </header>
+
+    <div class="background-img">
+        <img src="Image/ServicesPage.png" id="homepage-image">
+    </div>
+    
+
+    <div class="full-width-card">
+        <div class="three-image">
+            <div class="square-image-2"></div>
+            <div class="square-image-3"></div>
+            <div class="square-image-4"></div>
+    </div>
+
+    <div class="description">
+        <h2><span class="text-B">OUR SERVICES</span> <span class="text-O">AND EXPERTISE</span></h2>
+        <h3>BEST IT SOLUTION <br> FOR YOUR BUSINESS</h3>
+        <p>As part of our comprehensive IT services, we provide custom software development specifically designed to meet the unique requirements of your mining operations. Our tailored solutions enable you to streamline processes, enhance productivity, and adapt to changing industry demands. We also offer advanced data management and analytics services, empowering you to gain actionable insights from your data, improve decision-making, and drive operational efficiency.<br>We ensure your technology infrastructure aligns with your business objectives by integrating new systems and optimizing existing ones. Our ongoing support and maintenance services include proactive monitoring, troubleshooting, and updates, ensuring smooth operations and that your systems are always up-to-date with the latest technologies and industry standards. </p>
+    </div>
+
+    <div class="dot-img2">
+        <img src="Image/dot-img2.png" >
+    </div>
+
+    <div class="background-vec1">
+        <img src="Image/background-vec1.png" >
+    </div>
+    <div class="background-vec2">
+        <img src="Image/background-vec2.png" >
+    </div>
+
+<!-- ===== Services Cards ===== -->
+
+    <div class="services-cards-container">
+        <div class="service-card" onclick="openForm(this, 'Web Development')">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>We provide full-stack development, creating scalable, responsive applications that seamlessly integrate with your systems and perform across all platforms.</p>
+            <p1 style="display: none;">We focus on delivering robust, high-performance websites that prioritize speed, accessibility, and SEO. Whether you're looking to build a brand new site or optimize an existing one, our web development services cover everything from front-end design to back-end architecture, ensuring your online presence is both impactful and sustainable. Our team of experienced developers is skilled in the latest web technologies, including HTML5, CSS3, JavaScript, and modern frameworks like React, Angular, and Vue.js. We adhere to industry best practices, ensuring that your website is not only visually appealing but also optimized for performance, security, and scalability.</p1>
+            
+            <div class="tech-icons" style="display: none;">
+                <div class="tech-icon">
+                    <img src="Image/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/angular.png" alt="Angular">
+                    <p>Angular</p>
+                </div>
+
+                <a href="#" class="contact-us-button" style="display: none;">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openForm(this, 'Mobile Development')">
+            <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile Development</h3>
+            <p>We design native and cross-platform mobile apps tailored to your needs, ensuring smooth performance and a great user experience on all devices.</p>
+            <p1 style="display: none;">Our mobile development services encompass everything from user interface design to backend integration, utilizing the latest technologies to create apps that are fast, reliable, and user-friendly. We specialize in iOS and Android development, employing frameworks like Flutter and React Native to deliver cross-platform solutions that meet your business goals.</p1>
+        
+            <div class="tech-icons" style="display: none;">
+                <div class="tech-icon">
+                    <img src="Image/react.png" alt="react">
+                    <p>react</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/Flutter.png" alt="Flutter">
+                    <p>Flutter</p>
+                </div>
+                <!-- <div class="tech-icon">
+                    <img src="Image/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/angular.png" alt="Angular">
+                    <p>Angular</p>
+                </div> -->
+            </div>
+            <a href="#" class="contact-us-button" style="display: none;">Contact Us</a>
+        </div>
+        
+
+        <div class="service-card" onclick="openForm(this, 'Geo Specialist')">
+            <div class="card-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <h3>Geo Specialist</h3>
+            <p>We deliver cloud-based geospatial solutions for mining, enabling real-time data analysis for efficient resource tracking and terrain mapping.</p>
+            <p1 style="display: none;">Our geospatial services help mining companies harness the power of data by providing tools for monitoring environmental impacts, optimizing resource allocation, and ensuring compliance with regulations. We utilize advanced technologies to create tailored solutions that drive efficiency and support decision-making.</p1>
+            
+            <div class="tech-icons" style="display: none;">
+                <div class="tech-icon">
+                    <img src="Image/ArcGIS.png" alt="ArcGIS">
+                    <p>ArcGIS</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/QGIS.png" alt="QGIS">
+                    <p>QGIS</p>
+                </div>
+                <!-- <div class="tech-icon">
+                    <img src="Image/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/angular.png" alt="Angular">
+                    <p>Angular</p>
+                </div> -->
+            </div>
+            <a href="#" class="contact-us-button" style="display: none;">Contact Us</a>
+        </div>
+        
+
+
+        <div class="service-card" onclick="openForm(this, 'UI/UX Design')">
+            <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Our design team creates intuitive, user-friendly interfaces, prioritizing accessibility and usability for a seamless experience across all platforms.</p>
+            <p1 style="display: none;">We focus on understanding user needs and behaviors, crafting designs that are not only visually appealing but also enhance functionality. Our process involves user research, prototyping, and usability testing to ensure that every design choice serves to improve the overall user experience.</p1>
+        
+            <div class="tech-icons" style="display: none;">
+                <div class="tech-icon">
+                    <img src="Image/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/xd.png" alt="Xd">
+                    <p>Adobe XD</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/photoshop.png" alt="Photoshop">
+                    <p>Photoshop</p>
+                </div>
+            </div>
+            <a href="#" class="contact-us-button" style="display: none;">Contact Us</a>
+            
+        </div>
+
+        <div class="service-card" onclick="openForm(this, 'Quality Assurance')">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Quality Assurance</h3>
+            <p>We ensure software reliability with rigorous functionality, performance, and security testing at every stage to meet the highest standards.</p>
+            <p1 style="display: none;">Our quality assurance process includes automated and manual testing strategies to identify and resolve issues before deployment. We focus on maintaining high quality across all applications, ensuring they perform optimally and are secure for end-users.</p1>
+            
+            <div class="tech-icons" style="display: none;">
+                <div class="tech-icon">
+                    <img src="Image/Selenium.png" alt="Selenium">
+                    <p>Selenium</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/Postman.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/Jira.png" alt="Jira">
+                    <p>Jira</p>
+                </div>
+                <!-- <div class="tech-icon">
+                    <img src="Image/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="tech-icon">
+                    <img src="Image/angular.png" alt="Angular">
+                    <p>Angular</p>
+                </div> -->
+            </div>
+            <a href="#" class="contact-us-button" style="display: none;">Contact Us</a>
+        </div>
+
+    </div>
+
+    <!-- ===== Modal for Form ===== -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <div class="s-details">
+                <h3 id="modalTitle"></h3>
+                <div class="s-description">
+                    <p id="modalDescription"></p>
+                    <p id="modalExtraContent"></p>
+                </div>
+            
+                <div id="modalTechIcons"></div>
+                <a href="ContactUs.html" class="contact-us-button">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cards-topic">
+        <h2><span class="card-topic-b">OUR SERVICES</span> <span class="card-topic-o">AND EXPERTISE</span></h2>
+    </div>
+
+
+    <div class="background-vec3">
+        <img src="Image/background-vec1.png" >
+    </div>
+    <div class="background-vec4">
+        <img src="Image/background-vec2.png" >
+    </div>
+
+    <div class="dot-img3">
+        <img src="Image/dot-img2.png" >
+    </div>
+
+    <!-- Part-4 -->
+    <div class="full-width-card-2">
+        <div class="three-image">
+            <div class="agile-img"></div>
+        </div>
+
+        <div class="description-2">
+            <h2><span class="text-B">AN AGILE</span> <span class="text-O">PROCESS</span></h2>
+            <p>GeoPixPro utilizes an agile development process tailored for distributed development environments. Initially, we engage closely with clients to comprehensively grasp their requirements. Through collaborative efforts, we define and prioritize development tasks according to business objectives and risk assessments. This phase sets the foundation for subsequent actions. Transitioning into the development phase, we adopt a sprint-based approach, delivering software iteratively. Each sprint incorporates feedback loops and adjustments to ensure alignment with evolving needs and objectives. 
+
+            <br><br>This agile methodology enables adaptability, transparency, and responsiveness throughout the development lifecycle, facilitating the creation of high-quality software solutions that meet client expectations effectively.</p>
+        </div>
+        
+        <div class="dot-img4">
+            <img src="Image/dot-img2.png" >
+        </div>
+    </div>
+
+    <div class="dot-img-1">
+        <img src="Image/Dot-img3.png" >
+    </div>
+    <div class="dot-img-2">
+        <img src="Image/Dot-img4.png" >
+    </div>
+
+    
+    <div class="contact-card">
+        
+        <h3>Ready to scale your software <br>development ?</h3>
+        <p>Connect with us to learn how we can help accelerate your development goals.</p>
+        <button onclick="location.href='ContactUs.html'">Let's Talk<i class="fas fa-arrow-right ps-1"></i></button>
+    </div>
+    <div class="dot-img5">
+        <img src="Image/dot-img2.png" >
+    </div>
+    
+</body>
+
+<footer>
+    <div class="footer-container">
+        <img src="Image/footer-background.png" alt="Footer Background" class="footer-background">
+        <img src="Image/logo3.png" alt="Logo" class="footer-logo">
+
+        <div class="content-section">
+            <p>GeoPixPro is a leading technology company delivering innovative solutions and quality services tailored to meet your business needs.</p>
+            <hr> 
+            <div class="contact-info">
+                <p style="font-family: Arial, sans-serif;"><i class="fas fa-phone-alt"></i> +94 (11) 2559962</p>
+                <p><i class="fas fa-envelope"></i> info@geopixpro.lk</p>
+                <p><i class="fas fa-map-marker-alt"></i> No-02, Nandana Gardens, Colombo-04 , Sri Lanka.</p>
+            </div>
+            <div class="quick-link">
+                <ul>
+                    <li>
+                        <a href="index.html" style="text-decoration: none; color: inherit;" 
+                           onmouseover="this.style.color='orange'" 
+                           onmouseout="this.style.color='inherit'">Home</a>
+                    </li>
+                    <li>
+                        <a href="ServicesPage.html" style="text-decoration: none; color: inherit;" 
+                           onmouseover="this.style.color='orange'" 
+                           onmouseout="this.style.color='inherit'">Services</a>
+                    </li>
+                    <li>
+                        <a href="AboutUS.html" style="text-decoration: none; color: inherit;" 
+                           onmouseover="this.style.color='orange'" 
+                           onmouseout="this.style.color='inherit'">About Us</a>
+                    </li>
+                    <li>
+                        <a href="Careers.html" style="text-decoration: none; color: inherit;" 
+                           onmouseover="this.style.color='orange'" 
+                           onmouseout="this.style.color='inherit'">Careers</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html" style="text-decoration: none; color: inherit;" 
+                           onmouseover="this.style.color='orange'" 
+                           onmouseout="this.style.color='inherit'">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+               
+
+            <div class="our-services">
+                <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Web Development</a></li>
+                <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Mobile Development</a></li>
+                <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Geo Specialist</a></li>
+                <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">UI/UX Design</a></li>
+                <li><a href="ServicesPage.html" style="text-decoration: none; color: inherit;" onmouseover="this.style.color='orange'" onmouseout="this.style.color='inherit'">Quality Assurance</a></li>
+                
+            </div>
+
+            <div class="link-hedding">
+                <h2>Quick Link</h2>
+            </div>
+            <div class="services-hedding">
+                <h2>Our Services</h2>
+            </div>
+
+
+            <div class="email-subscription">
+                <h2>Join The GeoPixPro Family</h2>
+                <form action="https://formspree.io/f/mdkokljb" method="POST">
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2024 Copyright by GeoPixPro Technologies. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+
+</footer>
+
+<script>
+// Scroll menubar card
+document.addEventListener('DOMContentLoaded', function() {
+        const nav = document.querySelector('nav');
+        const frontPage = '/path/to/index.html';
+
+        function handleScroll() {
+            if (window.location.pathname === frontPage) {
+                nav.classList.remove('scrolled');
+            } else {
+                if (window.scrollY > 0) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            }
+        }
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+    });
+    
+
+
+// Service detail form
+function openForm(element, title) {
+    const modal = document.getElementById("serviceModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalExtraContent = document.getElementById("modalExtraContent");
+    const modalTechIcons = document.getElementById("modalTechIcons");
+
+    const description = element.querySelector('p').innerText;
+    const extraContent = element.querySelector('p1').innerText;
+
+    modalTitle.innerText = title;
+    modalDescription.innerText = description;
+    modalExtraContent.innerText = extraContent;
+
+    modalTechIcons.innerHTML = '';
+
+    const techIcons = element.querySelector('.tech-icons').cloneNode(true);
+    techIcons.style.display = 'flex';
+    modalTechIcons.appendChild(techIcons);
+
+    modal.style.display = "block";
+}
+function closeForm() {
+    document.getElementById("serviceModal").style.display = "none";
+}
+
+
+
+// Tech icon animation
+document.querySelectorAll('.tech-icon').forEach(icon => {
+    icon.addEventListener('click', function() {
+        alert(`You clicked on ${this.querySelector('p').innerText}`);
+    });
+});
+
+// Service image and service card animation
+document.addEventListener("DOMContentLoaded", function() {
+    // Combine all elements to be observed
+    const elementsToAnimate = document.querySelectorAll('.square-image-2, .square-image-3, .square-image-4, .service-card, .agile-img, .description-2, .contact-card');
+
+    const observerOptions = {
+        root: null, 
+        threshold: 0.05 // Use 10% threshold to trigger animations
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+        });
+    }, observerOptions);
+
+    // Observe all elements
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
+// <!-- ========= Nav bar manu =========== -->
+document.getElementById('hamburger').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active'); 
+        });
+        function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+        }
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+});
+</script>
+</html>
