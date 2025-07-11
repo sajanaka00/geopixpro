@@ -554,6 +554,7 @@ font-size: 18px;
     left: 750px;
     font-weight: 300;
     margin-bottom: 26px;
+    width: 40%;
 }
 
 .our-services li::before {
@@ -837,20 +838,21 @@ hr {
 
 @media (min-width: 1200px) and (max-width: 1300px) {
     .background-img img {
-        width: 124%;
+        /* width: 124%; */
         height: auto;
         min-height: 400px;
     }
 
     .full-width-card {
         top: 433px;
-        width: 124%;
+        /* width: 124%; */
     }
 
     .footer-background {
-        width: 124%;
+        /* width: 124%; */
         position: absolute;
         top: 20px;
+        height: 450px;
     }
 
     .footer-container {
