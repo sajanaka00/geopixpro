@@ -784,6 +784,7 @@ font-size: 16px;
     left: 750px;
     font-weight: 300;
     margin-bottom: 26px;
+    width: 40%;
 }
 
 .our-services li::before {
@@ -1340,9 +1341,9 @@ hr {
 
 
 @media (min-width: 1200px) and (max-width: 1300px) {
-    .background-img {
+    /* .background-img {
         width: 124%;
-    }
+    } */
 
     .background-img img {
         width: 100%;
@@ -1356,16 +1357,17 @@ hr {
     }
 
     .footer-background {
-        width: 124%;
+        /* width: 124%; */
         position: absolute;
         top: 20px;
+        height: 450px;
     }
 
-    .footer-container {
+    /* .footer-container {
         position: relative;
         bottom: -870px;
         display: block;
-    }
+    } */
 
     .vacancy-message {
         top: 372px;
